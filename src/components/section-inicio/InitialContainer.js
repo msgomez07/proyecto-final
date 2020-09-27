@@ -6,12 +6,6 @@ import NavBar from "./NavBar";
 export default function InitialContainer() {
   return (
     <div id="contenedorPrincipal">
-      {/* <img
-        className="imagen-header "
-        id="img"
-        src={ImagenPortada}
-        alt="Foto Portada"
-      /> */}
 
       <NavBar />
 
@@ -42,6 +36,9 @@ export default function InitialContainer() {
           </div>
         </div>
       </div>
+
+
+
     </div>
   );
 }
