@@ -1,23 +1,24 @@
 import React from "react";
-import Navbar from './NavBar'
-import ImagenPortada from "../../images/Portada.png";
+import NavBar from "./NavBar";
+// import ImagenPortada from "../../images/Portada.png";
 
 
 export default function InitialContainer() {
   return (
-    <div>
-      <Navbar />
-      <img
+    <div id="contenedorPrincipal">
+      {/* <img
         className="imagen-header "
         id="img"
         src={ImagenPortada}
         alt="Foto Portada"
-      />
+      /> */}
 
-      <div className="modal-dialog text-center">
-        <div className="col-sm-8 main-section">
-          <div className="modal-content" id="modal">
-            <form className="col-12 ">
+      <NavBar />
+
+      <div className="modal-dialog text-center mt-0">
+        <div className="col-sm-8 main-section pt-5">
+          <div className="modal-content mt" id="modal">
+            <form className="col-12">
               <h3 className="iniciar-sesion mt-3">Iniciar Sesión</h3>
               <div className="form-group">
                 <input

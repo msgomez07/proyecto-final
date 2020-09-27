@@ -36,3 +36,12 @@
   background-color: Gainsboro;
   padding: 10px;
 }
+
+
+#contenedorPrincipal {
+
+height: 75vh;
+    background-repeat: no-repeat;
+    background: url(./images/Portada.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
