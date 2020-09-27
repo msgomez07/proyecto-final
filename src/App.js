@@ -1,15 +1,19 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/section/NavBar';
-import InitialContainer from './components/section/InitialContainer';
+import InitialContainer from './components/section-inicio/InitialContainer';
+// import RegistroContainer from './components/section-registro/RegistroContainer'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+   
+    <div className="App">            
       <InitialContainer />
-
+      {/* <RegistroContainer /> */}
+      
     </div>
+    
   );
 }
 

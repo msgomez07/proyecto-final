@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from './NavBar'
 import ImagenPortada from "../../images/Portada.png";
+
 
 export default function InitialContainer() {
   return (
     <div>
+      <Navbar />
       <img
         className="imagen-header "
         id="img"
