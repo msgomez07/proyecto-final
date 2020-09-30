@@ -27,10 +27,6 @@
   padding: 10px;
 }
 
-#form-control1::before {
-  content: \f007;
-
-}
 
 #form-control2 {
   background-color: Gainsboro;

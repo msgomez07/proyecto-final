@@ -32,7 +32,7 @@ export default function FormRegistro() {
               <Form.Control
                 required
                 type="text"
-                placeholder="First Name *"
+                placeholder="Nombre *"
                 defaultValue=""
               />
               <Form.Control.Feedback type="invalid">
@@ -44,7 +44,7 @@ export default function FormRegistro() {
               <Form.Control
                 required
                 type="text"
-                placeholder="Last name *"
+                placeholder="Apellidos *"
                 defaultValue=""
               />
               <Form.Control.Feedback type="invalid">
@@ -94,7 +94,7 @@ export default function FormRegistro() {
           <Form.Group>
             <Form.Check
               required
-              label="Agree to terms and conditions"
+              label="Acepta los términos y condiciones"
               feedback="You must agree before submitting."
             />
           </Form.Group>
