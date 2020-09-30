@@ -19,8 +19,8 @@ export default function ContainerInit() {
     })
   }
 
-  const enviarDatos = () => {
-     axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
+   const enviarDatos = async () => {
+      await axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
     .then(response => {
       console.log(response.data);
     })
