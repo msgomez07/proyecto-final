@@ -1,11 +1,8 @@
 .imagen-header {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
- 
+  opacity: 0.8; 
 }
-
-
 
 .navbar {
   z-index: 2;
@@ -14,12 +11,10 @@
   margin-top: 0;
 }
 
-
 .main-section {
   margin:0 auto;
   margin-top: 0px;
   margin-left: 350px;
-
 }
 
 #form-control1 {
@@ -27,18 +22,24 @@
   padding: 10px;
 }
 
-
 #form-control2 {
   background-color: Gainsboro;
   padding: 10px;
 }
 
-
 #contenedorPrincipal {
-
 height: 75vh;
     background-repeat: no-repeat;
     background: url(./images/Portada.png) no-repeat center center fixed;
     background-size: 100% 100%;
 }
 
+
+
+/* Footer */
+
+.main-footer {
+  background-color: rgb(79, 79, 80);
+  color: white;
+  padding: 40px;
+}

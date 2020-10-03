@@ -1,18 +1,18 @@
 import React from "react";
 import NavBar from "./NavBar";
-// import Containerinit from "./ContainerInit";
-// import ContainerDetails from "./ContainerDetails";
+import Containerinit from "./ContainerInit";
+import ContainerFooter from "./ContainerFooter";
 
 
-export default function QuienesContainer() {
+
+export default function Container() {
   return (
     <div>
-      <div id="contenedorPrincipal">
-        <NavBar />
-        {/* <Containerinit /> */}
+      <div id="container">
+        <NavBar />        
+        <Containerinit />
       </div>
-
-      {/* <ContainerDetails /> */}
+      <ContainerFooter />
     </div>
   );
 }

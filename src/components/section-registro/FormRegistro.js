@@ -45,8 +45,7 @@ export default function FormRegistro() {
     if (form.checkValidity() === false) {
       event.stopPropagation();
     }
-    setValidated(true);
-    
+    setValidated(true);   
     
  
   if (form.checkValidity() === true) {
@@ -55,7 +54,7 @@ export default function FormRegistro() {
       text:"Ve a la página inicial para iniciar sesión",
       icon:"success",
       button:"Aceptar",
-      timer: "7000"
+      timer: "8000"
     })   
     event.target.reset(setValidated(false));  
   } 
