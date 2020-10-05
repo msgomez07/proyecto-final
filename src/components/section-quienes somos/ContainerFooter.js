@@ -7,17 +7,17 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function ContainerFooter() {
   return (
-    <div className="main-footer d-flex flex-row">
+    <div className="container-fluid main-footer d-flex flex-row">
       <div className="d-flex flex-column align-items-center">
         <div className="d-flex flex-row w-100">
          
-          <div className="d-flex flex-column align-items-center w-100 ">            
-            <img src={Logo} alt="imagen-logo" className="w-75 mt-5 h-75"/>
+          <div className="d-flex flex-column align-items-center w-100 p-3 ">            
+            <img src={Logo} alt="imagen-logo" className="img-fluid w-75 mt-5 h-75 p-2"/>
           </div>
        
-          <div className="d-flex flex-column align-items-center w-100">
+          <div className="d-flex flex-column align-items-center w-100 p-3">
             <h5>Michael Gómez</h5>
-            <img src={Michael} alt="imagen-michael" className="w-50 h-50 mt-2"/>
+            <img src={Michael} alt="imagen-michael" className="img-fluid w-50 p-2 h-50 rounded-circle"/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto itaque numquam unde natus voluptate commodi, repudiandae a, optio eos nemo adipisci totam consectetur! Corporis?</p>
             <div className="d-flex flex-row">
             <a className=" mb-1 p-3" href="/" target="_blank" rel="noopener noreferrer" >
@@ -27,9 +27,9 @@ function ContainerFooter() {
             </div>    
           </div>
          
-          <div className="d-flex flex-column align-items-center w-100">
+          <div className="d-flex flex-column align-items-center w-100 p-3">
           <h5>Iván Darío Mejía</h5>
-            <img src={Ivan} alt="imagen-ivan" className="w-50  h-50 mt-2" />
+            <img src={Ivan} alt="imagen-ivan" className="img-fluid w-50 p-2 h-50 rounded-circle" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto itaque numquam unde natus voluptate commodi, repudiandae a, optio eos nemo adipisci totam consectetur! Corporis?</p>
             <div className="d-flex flex-row">
             <a className=" mb-3 p-3" href="https://github.com/Ivancho427" target="_blank" rel="noopener noreferrer" >
@@ -42,7 +42,7 @@ function ContainerFooter() {
 
         <div className="row">
           <hr />
-          <p className="col-sm text-center mt-2 pt-3">            
+          <p className=" container-fluid col-sm text-center mt-2 pt-3">            
             &copy;{2020} DE-SA (Deporte y Salud) Salud en línea | Derechos reservados | 
             Terminos y Condiciones | Privacidad
           </p>
