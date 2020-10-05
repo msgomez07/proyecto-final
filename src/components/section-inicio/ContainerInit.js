@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Cookies from 'universal-cookie'
 
@@ -12,7 +12,12 @@ export default function ContainerInit() {
     password: ''
   })
   
+useEffect(() =>{
+if(cookies.get("email")){
+  window.location.href='./menu'
+}
 
+})
 
   const handleInputChange = (event) => {
     setDatos({
@@ -21,9 +26,9 @@ export default function ContainerInit() {
     })
   }
 
-   const enviarDatos = (event) => {
+   const enviarDatos = async (event) => {
     event.preventDefault()
-     axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
+     await axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
     .then(response => {
       return response.data;
     })
@@ -54,7 +59,7 @@ export default function ContainerInit() {
         <div className="modal-dialog text-center mt-0">
         <div className="col-sm-8 main-section pt-5">
           <div className="modal-content mt" id="modal">
-            <form className="col-12" onSubmit={enviarDatos}>
+            <form className="col-12" >
               <h3 className="iniciar-sesion mt-3">Iniciar Sesión</h3>
               <div className="form-group">
                 <input
@@ -75,7 +80,7 @@ export default function ContainerInit() {
                   onChange={handleInputChange}
                 />
               </div>
-              <button className="" type="submit" >Ingresar</button>
+              <button className="" onClick={enviarDatos} >Ingresar</button>
             </form>
             <div className="col-12 forgot mt-3 mb-2">
                 <a href="/">Recordar contraseña</a>                
