@@ -39,7 +39,8 @@ height: 75vh;
 /* Footer */
 
 .main-footer {
-  background-color: rgb(79, 79, 80);
+
+  background-color: rgb(119, 136, 153);
   color: white;
   padding: 40px;
 }
