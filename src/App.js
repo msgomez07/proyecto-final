@@ -4,6 +4,8 @@ import InitialContainer from "./components/section-inicio/InitialContainer";
 import RegistroContainer from "./components/section-registro/RegistroContainer";
 import QuienesContainer from "./components/section-quienes somos/QuienesContainer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Menu from "./components/section-menu/Menu";
+
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
         <Switch>
           <Route path="/inicio">
             <InitialContainer />
+          </Route>
+          <Route path="/menu">
+            <Menu />
           </Route>
           <Route path="/registro">
             <RegistroContainer />

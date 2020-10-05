@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import Containerinit from "./ContainerInit";
+import ContainerInit from "./ContainerInit";
 import ContainerDetails from "./ContainerDetails";
 
 
@@ -9,7 +9,7 @@ export default function InitialContainer() {
     <div>
       <div id="contenedorPrincipal">
         <NavBar />
-        <Containerinit />
+        <ContainerInit />
       </div>
 
       <ContainerDetails />

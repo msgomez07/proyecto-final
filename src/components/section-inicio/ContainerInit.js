@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import Cookies from 'universal-cookie'
 
 const baseUrl ="https://api-users-54hhbmzp6.vercel.app/users"
+const cookies = new Cookies();
 
 export default function ContainerInit() {
 
@@ -19,13 +21,30 @@ export default function ContainerInit() {
     })
   }
 
-   const enviarDatos = async () => {
-      await axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
+   const enviarDatos = (event) => {
+    event.preventDefault()
+     axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
     .then(response => {
-      console.log(response.data);
+      return response.data;
+    })
+    .then(response => {
+      if(response.length >0){
+        var drespuesta = response[0];
+        cookies.set("id", drespuesta.id, {path: "/"});
+        cookies.set("name", drespuesta.name, {path: "/"});
+        cookies.set("last_name", drespuesta.last_name, {path: "/"});
+        cookies.set("age", drespuesta.id, {path: "/"});
+        cookies.set("email", drespuesta.id, {path: "/"});
+        alert(`Bienvenido ${drespuesta.name} ${drespuesta.last_name}`);
+        window.location.href="./menu";
+      }else{
+        alert("usuario o contraseña incorrecto");
+      }
     })
     .catch(error=>{
+
       console.log(error)
+      alert("usuario o contraseña incorrectos")
     })
   }
 
@@ -35,7 +54,7 @@ export default function ContainerInit() {
         <div className="modal-dialog text-center mt-0">
         <div className="col-sm-8 main-section pt-5">
           <div className="modal-content mt" id="modal">
-            <form className="col-12">
+            <form className="col-12" onSubmit={enviarDatos}>
               <h3 className="iniciar-sesion mt-3">Iniciar Sesión</h3>
               <div className="form-group">
                 <input
@@ -56,7 +75,7 @@ export default function ContainerInit() {
                   onChange={handleInputChange}
                 />
               </div>
-              <p className="" onClick={()=> enviarDatos()}>Ingresar</p>
+              <button className="" type="submit" >Ingresar</button>
             </form>
             <div className="col-12 forgot mt-3 mb-2">
                 <a href="/">Recordar contraseña</a>                
@@ -68,3 +87,5 @@ export default function ContainerInit() {
 
     )
 }
+
+// onClick={()=> enviarDatos()}
