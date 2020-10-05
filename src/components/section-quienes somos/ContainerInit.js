@@ -1,15 +1,18 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import Cookies from 'universal-cookie'
+import swal from 'sweetalert';
 
 const baseUrl ="https://api-users-54hhbmzp6.vercel.app/users"
+const cookies = new Cookies();
 
 export default function ContainerInit() {
 
   const [datos, setDatos] = useState({
     email: '',
     password: ''
-  })
-  
+  }) 
+
 
   const handleInputChange = (event) => {
     setDatos({
@@ -18,20 +21,49 @@ export default function ContainerInit() {
     })
   }
 
-   const enviarDatos = async () => {
-      await axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
+   const enviarDatos = (event) => {
+    event.preventDefault()
+     axios.get(baseUrl, {params: {email: datos.email, password: datos.password}})
     .then(response => {
-      console.log(response.data);
+      return response.data;
+    })
+    .then(response => {
+      if(response.length >0){
+        var drespuesta = response[0];
+        cookies.set("id", drespuesta.id, {path: "/"});
+        cookies.set("name", drespuesta.name, {path: "/"});
+        cookies.set("last_name", drespuesta.last_name, {path: "/"});
+        cookies.set("age", drespuesta.id, {path: "/"});
+        cookies.set("email", drespuesta.id, {path: "/"});        
+        swal({title: `Bienvenido ${drespuesta.name} ${drespuesta.last_name}`,
+      icon:"success",
+      button:"Aceptar",  
+      timer:"7000"     
+     })
+     .then(() => {
+      window.location.href="./menu";    
+    })
+      }else{
+        swal({
+          title:"Usuario o contraseña incorrecto",          
+          icon:"error",
+          button:"Aceptar",
+          timer: "7000"
+        }) 
+      }
     })
     .catch(error=>{
-      console.log(error)
-    })
-  }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  }
-  
+      console.log(error)
+      swal({
+        title:"Usuario o contraseña incorrecto",          
+        icon:"error",
+        button:"Aceptar",
+        timer: "7000"
+      }) 
+    })
+}
+
     return (
         <div className="d-flex">
           <div className="d-flex flex-column align-items-initial w-100 p-3">
@@ -44,7 +76,7 @@ export default function ContainerInit() {
         
         <div className="col-sm-8 pt-0">
           <div className="modal-content mt" id="modal">
-            <form className="col-12" onSubmit={handleSubmit}>
+            <form className="col-12" onSubmit={enviarDatos}>
               <h3 className="iniciar-sesion mt-5">Iniciar Sesión</h3>
               <div className="form-group">
                 <input
@@ -64,8 +96,9 @@ export default function ContainerInit() {
                   onChange={handleInputChange}
                 />
               </div>
-              <button className="bg-primary" type="submit" onClick={()=> enviarDatos()}>Ingresar</button>
-              {/* <p className="" onClick={()=> enviarDatos()}>Ingresar</p> */}
+              <button className="" type="submit" >Ingresar</button>
+              {/* <button className="bg-primary" type="submit" onClick={()=> enviarDatos()}>Ingresar</button> */}
+             
             </form>
             <div className="col-12 forgot mt-3 mb-2">
                 <a href="/">Recordar contraseña</a>                
