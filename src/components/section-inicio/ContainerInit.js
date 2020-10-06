@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Cookies from 'universal-cookie'
+import swal from 'sweetalert';
+
 
 const baseUrl ="https://api-users-54hhbmzp6.vercel.app/users"
 const cookies = new Cookies();
@@ -40,10 +42,20 @@ if(cookies.get("email")){
         cookies.set("last_name", drespuesta.last_name, {path: "/"});
         cookies.set("age", drespuesta.id, {path: "/"});
         cookies.set("email", drespuesta.id, {path: "/"});
-        alert(`Bienvenido ${drespuesta.name} ${drespuesta.last_name}`);
-        window.location.href="./menu";
+        swal({title: `Bienvenido ${drespuesta.name} ${drespuesta.last_name}`,
+        icon:"success",
+        button:"Aceptar",  
+        timer:"7000"     
+       })
+       .then(() => {
+        window.location.href="./menu";    })
       }else{
-        alert("usuario o contraseña incorrecto");
+        swal({
+          title:"Usuario o contraseña incorrecto",          
+          icon:"error",
+          button:"Aceptar",
+          timer: "7000"
+        }) 
       }
     })
     .catch(error=>{
