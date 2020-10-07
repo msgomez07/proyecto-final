@@ -17,6 +17,8 @@ export default function FormRegistro() {
     age: "",
     email: "",
     password: "",
+    peso: "",
+    altura: ""
   });
 
   const handleInputChange = (e) => {
@@ -149,6 +151,39 @@ export default function FormRegistro() {
               </Form.Control.Feedback>
             </Form.Group>
           </Form.Row>
+
+          <Form.Row>
+          <Form.Group as={Col} md="3">
+          <Form.Label>Peso</Form.Label>
+          <Form.Control
+                type="number"
+                placeholder="Peso *"
+                required
+                name="peso"
+                onChange={handleInputChange}
+              />
+              <Form.Control.Feedback type="invalid">
+                Ingrese un peso valido eje 80.
+              </Form.Control.Feedback>
+
+          </Form.Group>
+          <Form.Group as={Col} md="3">
+          <Form.Label>Altura</Form.Label>
+          <Form.Control
+                type="number"
+                placeholder="Altura *"
+                required
+                name="altura"
+                onChange={handleInputChange}
+              />
+              <Form.Control.Feedback type="invalid">
+                Ingrese altura valida eje 180.
+              </Form.Control.Feedback>
+
+          </Form.Group>
+          </Form.Row>
+
+
           <Form.Group>
             <Form.Check
               required

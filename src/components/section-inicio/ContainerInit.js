@@ -19,6 +19,7 @@ if(cookies.get("email")){
   window.location.href='./menu'
 }
 
+
 })
 
   const handleInputChange = (event) => {
@@ -37,11 +38,16 @@ if(cookies.get("email")){
     .then(response => {
       if(response.length >0){
         var drespuesta = response[0];
-        cookies.set("id", drespuesta.id, {path: "/"});
+        cookies.set( 'id', drespuesta.id, {path: "/"});
         cookies.set("name", drespuesta.name, {path: "/"});
         cookies.set("last_name", drespuesta.last_name, {path: "/"});
-        cookies.set("age", drespuesta.id, {path: "/"});
-        cookies.set("email", drespuesta.id, {path: "/"});
+        cookies.set("age", drespuesta.age, {path: "/"});
+        cookies.set("email", drespuesta.email, {path: "/"});
+        cookies.set("peso", drespuesta.peso, {path: "/"});
+        cookies.set("altura", drespuesta.altura, {path: "/"});
+        cookies.set("url", baseUrl, {path: "/"});
+
+
         swal({title: `Bienvenido ${drespuesta.name} ${drespuesta.last_name}`,
         icon:"success",
         button:"Aceptar",  

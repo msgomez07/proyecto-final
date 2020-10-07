@@ -9,7 +9,7 @@ export default function TimeMenu() {
       <div className="d-flex justify-content-center">
         <ul className="d-flex">
           <li className="d-flex m-3">
-            <h3 className="ml-3 mr-3 text-light">TIME</h3>
+            <h3 className="ml-3 mr-3 text-light">TIEMPO</h3>
             <FontAwesomeIcon
               icon={faClock}
               style={{ color: "#fff", fontSize: "30" }}
@@ -17,7 +17,7 @@ export default function TimeMenu() {
             <h3 className="ml-3 mr-3 text-light">02</h3>
           </li>
           <li className="d-flex m-3">
-            <h3 className="ml-3 mr-3 text-light">CALORIES</h3>
+            <h3 className="ml-3 mr-3 text-light">CALORIAS</h3>
             <FontAwesomeIcon
               icon={faFire}
               style={{ color: "#fff", fontSize: "30" }}
@@ -25,7 +25,7 @@ export default function TimeMenu() {
             <h3 className="ml-3 mr-3 text-light">200</h3>
           </li>
           <li className="d-flex m-3">
-            <h3 className="ml-3 mr-3 text-light">STEPS</h3>
+            <h3 className="ml-3 mr-3 text-light">PASOS</h3>
             <FontAwesomeIcon
               icon={faShoePrints}
               style={{ color: "#fff", fontSize: "30" }}
