@@ -171,6 +171,7 @@ export default function FormRegistro() {
           <Form.Label>Altura</Form.Label>
           <Form.Control
                 type="number"
+                step="any"
                 placeholder="Altura *"
                 required
                 name="altura"
