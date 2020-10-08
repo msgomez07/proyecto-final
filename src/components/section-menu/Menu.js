@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Cookies from 'universal-cookie'
 import ContainerMenu from './ContainerMenu';
 import axios from 'axios'
+import Actividades from './Actividades';
 
 const cookies = new Cookies();
 
@@ -55,16 +56,11 @@ useEffect(() =>{
         console.log(imcT)
     
 
-   
-
-
     return (
 
         <div>
             <ContainerMenu />  
-            
-
-         
+            <Actividades  imcT={imcT} />         
         </div>
     )
 }
