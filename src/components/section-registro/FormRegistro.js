@@ -14,7 +14,6 @@ export default function FormRegistro() {
   const [datos, setDatos] = useState({
     name: "",
     last_name: "",
-    age: "",
     email: "",
     password: "",
     peso: "",
@@ -35,10 +34,13 @@ export default function FormRegistro() {
       })
       .then((response) => {
         console.log(response);
+
       })
       .catch((error) => {
         console.log(error);
       });
+
+
   };
 
   const handleSubmit = (event) => {
@@ -102,19 +104,6 @@ export default function FormRegistro() {
                 Ingrese los apellidos.
               </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="2" controlId="validationCustom03">
-              <Form.Label>Edad: </Form.Label>
-              <Form.Control
-                type="number"
-                placeholder="Edad *"
-                name="age"
-                required
-                onChange={handleInputChange}
-              />
-              <Form.Control.Feedback type="invalid">
-                Ingrese la edad.
-              </Form.Control.Feedback>
-            </Form.Group>
           </Form.Row>
           <Form.Row>
             <Form.Group as={Col} md="4" controlId="validationCustomUsername">
@@ -137,7 +126,7 @@ export default function FormRegistro() {
                 </Form.Control.Feedback>
               </InputGroup>
             </Form.Group>
-            <Form.Group as={Col} md="3" controlId="validationCustom04">
+            <Form.Group as={Col} md="4" controlId="validationCustom04">
               <Form.Label>Contraseña</Form.Label>
               <Form.Control
                 type="password"
@@ -153,7 +142,7 @@ export default function FormRegistro() {
           </Form.Row>
 
           <Form.Row>
-          <Form.Group as={Col} md="3">
+          <Form.Group as={Col} md="4">
           <Form.Label>Peso</Form.Label>
           <Form.Control
                 type="number"
@@ -167,7 +156,7 @@ export default function FormRegistro() {
               </Form.Control.Feedback>
 
           </Form.Group>
-          <Form.Group as={Col} md="3">
+          <Form.Group as={Col} md="4">
           <Form.Label>Altura</Form.Label>
           <Form.Control
                 type="number"

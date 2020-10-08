@@ -41,7 +41,6 @@ if(cookies.get("email")){
         cookies.set( 'id', drespuesta.id, {path: "/"});
         cookies.set("name", drespuesta.name, {path: "/"});
         cookies.set("last_name", drespuesta.last_name, {path: "/"});
-        cookies.set("age", drespuesta.age, {path: "/"});
         cookies.set("email", drespuesta.email, {path: "/"});
         cookies.set("peso", drespuesta.peso, {path: "/"});
         cookies.set("altura", drespuesta.altura, {path: "/"});
