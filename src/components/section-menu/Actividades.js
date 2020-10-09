@@ -57,68 +57,68 @@ export default function Actividades(props) {
     
                 ejercicios : 
 
-<div class="card-deck w-75  mt-5">
-                    <div class="card">
+<div className="card-deck w-75  mt-5">
+                    <div className="card" id="card1">
                       <video
-                        class="card-img-top"
+                        className="card-img-top p-2"
                         src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435316789.mp4"
                         controls
                       >
                         <code>video</code>
                       </video>
-                      <div class="card-body">
-                        <h5 class="card-title">
+                      <div className="card-body ">
+                        <h5 className="card-title text-center p-2">
                         Sentadilla con extensión de hombro y rotación de tronco
                         </h5>
-                        <p class="card-text">
+                        <p className="card-text text-justify p-2">
                         Erguido, separe los pies la misma distancia que existe entre los hombros. Haga el gesto de sentarse bajando los glúteos hasta donde sepa que va a poder volver a levantarse. Una vez llegue a ese límite, levántese mientras estira los brazos hacia arriba y rote el tronco a un lado. Cambie de lado con cada repetición. Asegúrese de que las piernas no giren con usted. Tome aire al bajar y expúlselo al subir.
                         </p>
                       </div>
-                      <div class="card-footer">
-                        <small class="text-muted">
-                          Last updated 3 mins ago
+                      <div className="card-footer">
+                        <small className="text-muted">
+                          Primer ejercicio del día
                         </small>
                       </div>
                     </div>
-                    <div class="card">
+                    <div className="card" id="card2">
                       <video
-                        class="card-img-top"
+                        className="card-img-top p-2"
                         src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435317154.mp4"
                         controls
                       >
                         <code>video</code>
                       </video>
-                      <div class="card-body">
-                        <h5 class="card-title">Remo a dos manos</h5>
-                        <p class="card-text">
+                      <div className="card-body">
+                        <h5 className="card-title text-center p-2">Remo a dos manos</h5>
+                        <p className="card-text text-justify p-2">
                         De pie, incline ligeramente el tronco recto hacia delante. Coja unas mancuernas y gire las muñecas para que las palmas miren hacia arriba. Inspire, y espire mientras simula que rema llevando los codos hacia atrás
                         </p>
                       </div>
-                      <div class="card-footer">
-                        <small class="text-muted">
-                          Last updated 3 mins ago
+                      <div className="card-footer">
+                        <small className="text-muted">
+                          Segundo ejercicio del día
                         </small>
                       </div>
                     </div>
-                    <div class="card">
+                    <div className="card" id="card3">
                       <video
-                        class="card-img-top"
+                        className="card-img-top p-2"
                         src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435317596.mp4"
                         controls
                       >
                         <code>video</code>
                       </video>
-                      <div class="card-body">
-                        <h5 class="card-title">
+                      <div className="card-body">
+                        <h5 className="card-title text-center p-2">
                         Integrado de equilibrio y extensores
                         </h5>
-                        <p class="card-text">
+                        <p className="card-text text-justify p-2">
                         Haga equilibrio sobre un pie y desde esa posición simule el vuelo de Superman, extendiendo la pierna hacia atrás y los dos brazos hacia delante. Vuelva a la posición inicial manteniendo la pierna en vilo (si puede). Haga una serie completa y cuando la acabe, cambie de pierna.
                         </p>
                       </div>
-                      <div class="card-footer">
-                        <small class="text-muted">
-                          Last updated 3 mins ago
+                      <div className="card-footer">
+                        <small className="text-muted">
+                          Tercer ejercicio del día
                         </small>
                       </div>
                     </div>
@@ -176,18 +176,18 @@ export default function Actividades(props) {
               })
               setMartes({
                 ejercicios: (
-                  <div class="card-deck w-75  mt-5">
-                    <div class="card">
+                  <div className="card-deck w-75  mt-5">
+                    <div className="card" id="card4">
                       <img
                         src="https://ep01.epimg.net/elpais/imagenes/2015/06/26/buenavida/1435315710_063870_1435316360_sumario_normal.jpg"
-                        class="card-img-top"
+                        className="card-img-top"
                         alt="..."
                       />
-                      <div class="card-body">
-                        <h5 class="card-title">
+                      <div className="card-body">
+                        <h5 className="card-title text-center p-2">
                           Ejercicio cardiovascularar
                         </h5>
-                        <p class="card-text">
+                        <p className="card-text text-justify p-2">
                           Antes de comenzar y entre ejercicio y ejercicio súbase
                           durante 30 segundos a la cinta de correr, a una
                           bicicleta estática o a una elíptica. Si no tiene
@@ -196,23 +196,23 @@ export default function Actividades(props) {
                           habitual.
                         </p>
                       </div>
-                      <div class="card-footer">
-                        <small class="text-muted">
-                          Last updated 3 mins ago
+                      <div className="card-footer">
+                        <small className="text-muted">
+                          Primer ejercicio del día
                         </small>
                       </div>
                     </div>
-                    <div class="card">
+                    <div className="card" id="card5">
                       <video
-                        class="card-img-top"
+                        className="card-img-top p-2"
                         src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435315927.mp4"
                         controls
                       >
                         <code>video</code>
                       </video>
-                      <div class="card-body">
-                        <h5 class="card-title">Rotación de tronco a un lado</h5>
-                        <p class="card-text">
+                      <div claclassNamess="card-body">
+                        <h5 className="card-title text-center p-2">Rotación de tronco a un lado</h5>
+                        <p className="card-text text-justify p-2">
                           Túmbese en el suelo (si está incómodo hágalo sobre una
                           esterilla o toalla mullida) con los brazos abiertos en
                           cruz sobre el suelo. Levante las rodillas hasta
@@ -222,25 +222,25 @@ export default function Actividades(props) {
                           siempre los hombros apoyados.
                         </p>
                       </div>
-                      <div class="card-footer">
-                        <small class="text-muted">
-                          Last updated 3 mins ago
+                      <div className="card-footer">
+                        <small className="text-muted">
+                         Segundo ejercicio del día
                         </small>
                       </div>
                     </div>
-                    <div class="card">
+                    <div className="card" id="card6">
                       <video
-                        class="card-img-top"
+                        className="card-img-top"
                         src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435316535.mp4"
                         controls
                       >
                         <code>video</code>
                       </video>
-                      <div class="card-body">
-                        <h5 class="card-title">
+                      <div className="card-body">
+                        <h5 className="card-title text-center p-2">
                           Extensión de cadera y hombro a gatas
                         </h5>
-                        <p class="card-text">
+                        <p className="card-text text-justify p-2">
                           Colóquese a gatas, apoyando las manos y rodillas en el
                           suelo a la altura de los hombros y las caderas
                           respectivamente. Estire una de las piernas y llévela
@@ -250,9 +250,9 @@ export default function Actividades(props) {
                           completar la serie.
                         </p>
                       </div>
-                      <div class="card-footer">
-                        <small class="text-muted">
-                          Last updated 3 mins ago
+                      <div className="card-footer">
+                        <small className="text-muted">
+                          Tercer ejercicio del día
                         </small>
                       </div>
                     </div>
@@ -314,7 +314,7 @@ export default function Actividades(props) {
     return (
       <div className="d-flex flex-column justify-content-center align-items-center">
 
-          <button className="btn btn-outline-info mt-5" onClick={()=>tururu()}>consulta la actividad de hoy</button>
+          <button className="btn btn-outline-info mt-5" onClick={()=>tururu()}>Consulta la actividad para hoy</button>
 
 
         {martes.ejercicios}

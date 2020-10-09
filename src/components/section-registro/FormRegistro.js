@@ -66,8 +66,9 @@ export default function FormRegistro() {
 };
 
   return (
-    <div className="d-flex flex-md-row flex-column">
-      <div className="w-100 p-3">
+    <div className="d-flex flex-md-row flex-column bg">      
+      <div className="w-100 p-3 fondo">
+     
         <h3 className="registro pt-5 text-center">Registro</h3>        
         <Form
           className="formulario mt-5"
@@ -181,18 +182,19 @@ export default function FormRegistro() {
               feedback="You must agree before submitting."
             />
           </Form.Group>
-          <Button type="submit" onClick={() => enviarDatos()}>
+          <Button id="boton"type="submit" onClick={() => enviarDatos()}>
             Registrarse
           </Button>
         </Form>
       </div>
-      <div className="w-100 pt-5">
+      <div className="w-100 pt-5 fondo">
         <img
           src={imgregis}
           alt="imageregis"
           className="w-75 mt-5 shadow p-3 mb-5 bg-white rounded"
         />
       </div>
-    </div>
+      </div>
+    
   );
 }

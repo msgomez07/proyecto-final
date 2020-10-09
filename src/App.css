@@ -52,3 +52,108 @@ height: 75vh;
   color: white;
   padding: 40px;
 }
+
+
+/* Registro */
+
+.bg {
+  border-bottom: 2px solid #9e9ea0;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), #cececf);
+  
+  transform: skewY(-7deg);
+  /* border-top: sienna; */
+}
+
+.fondo {
+  transform: skewY(7deg);
+}
+
+#boton {
+  color:  #ebebf7;
+  background-color: #8d8a8a;
+}
+
+#navregistro {
+  border-bottom: 1px solid #cacacc;
+}
+
+/* Menu */
+
+#card1 {
+  border-radius: 10px;
+  border-color: #b6b5b5;  
+  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0,25s;
+}
+
+#card1:hover {
+  transform: translateY(-35px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+#card2 {
+  border-radius: 10px;
+  border-color: #b6b5b5;  
+  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0,25s;
+}
+
+#card2:hover {
+  transform: translateY(-35px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+#card3 {
+  border-radius: 10px;
+  border-color: #b6b5b5;  
+  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0,25s;
+}
+
+#card3:hover {
+  transform: translateY(-35px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+#card4{
+  border-radius: 10px;
+  border-color: #b6b5b5;  
+  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0,25s;
+}
+
+#card4:hover {
+  transform: translateY(-35px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+#card5 {
+  border-radius: 10px;
+  border-color: #b6b5b5;  
+  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0,25s;
+}
+
+#card5:hover {
+  transform: translateY(-35px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+#card6 {
+  border-radius: 10px;
+  border-color: #b6b5b5;  
+  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0,25s;
+}
+
+#card6:hover {
+  transform: translateY(-35px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
