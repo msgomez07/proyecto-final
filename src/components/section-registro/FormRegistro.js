@@ -66,7 +66,7 @@ export default function FormRegistro() {
 };
 
   return (
-    <div className="d-flex">
+    <div className="d-flex flex-md-row flex-column">
       <div className="w-100 p-3">
         <h3 className="registro pt-5 text-center">Registro</h3>        
         <Form

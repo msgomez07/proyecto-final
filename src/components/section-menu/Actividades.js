@@ -55,13 +55,77 @@ export default function Actividades(props) {
               })
               setMartes({
     
-                ejercicios : <div>
-                    <ul>
-                        <li>abdominales</li>
-                        <li>sentadillas</li>
-                        <li>bicicleta</li>
-                    </ul>
-                </div> 
+                ejercicios : 
+
+<div class="card-deck w-75  mt-5">
+                    <div class="card">
+                      <video
+                        class="card-img-top"
+                        src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435316789.mp4"
+                        controls
+                      >
+                        <code>video</code>
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                        Sentadilla con extensión de hombro y rotación de tronco
+                        </h5>
+                        <p class="card-text">
+                        Erguido, separe los pies la misma distancia que existe entre los hombros. Haga el gesto de sentarse bajando los glúteos hasta donde sepa que va a poder volver a levantarse. Una vez llegue a ese límite, levántese mientras estira los brazos hacia arriba y rote el tronco a un lado. Cambie de lado con cada repetición. Asegúrese de que las piernas no giren con usted. Tome aire al bajar y expúlselo al subir.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          Last updated 3 mins ago
+                        </small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <video
+                        class="card-img-top"
+                        src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435317154.mp4"
+                        controls
+                      >
+                        <code>video</code>
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title">Remo a dos manos</h5>
+                        <p class="card-text">
+                        De pie, incline ligeramente el tronco recto hacia delante. Coja unas mancuernas y gire las muñecas para que las palmas miren hacia arriba. Inspire, y espire mientras simula que rema llevando los codos hacia atrás
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          Last updated 3 mins ago
+                        </small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <video
+                        class="card-img-top"
+                        src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435317596.mp4"
+                        controls
+                      >
+                        <code>video</code>
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                        Integrado de equilibrio y extensores
+                        </h5>
+                        <p class="card-text">
+                        Haga equilibrio sobre un pie y desde esa posición simule el vuelo de Superman, extendiendo la pierna hacia atrás y los dos brazos hacia delante. Vuelva a la posición inicial manteniendo la pierna en vilo (si puede). Haga una serie completa y cuando la acabe, cambie de pierna.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          Last updated 3 mins ago
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+
+
+
               })
               setMiercoles({
     
@@ -111,31 +175,90 @@ export default function Actividades(props) {
                 </div> 
               })
               setMartes({
-    
-                ejercicios : 
-                    <ol className="w-75  mt-5">
-                        <li className="d-flex flex-column justify-content-center align-items-center">
-                            
-                            <h2>Ejercicio cardiovascular</h2>
-                            <p>Antes de comenzar y entre ejercicio y ejercicio súbase durante 30 segundos a la cinta de correr, a una bicicleta estática o a una elíptica. Si no tiene ninguno de estos aparatos, simule que camina en el sitio elevando las rodillas un poco más de lo habitual.</p>
-                            <img src="https://ep01.epimg.net/elpais/imagenes/2015/06/26/buenavida/1435315710_063870_1435316360_sumario_normal.jpg" alt="img_cardio"/>
-
-                        </li>
-                        <li className="d-flex flex-column justify-content-center align-items-center">
-                            <h2>Rotación de tronco (desde supino) a un lado</h2>
-                            <p>Túmbese en el suelo (si está incómodo hágalo sobre una esterilla o toalla mullida) con los brazos abiertos en cruz sobre el suelo. Levante las rodillas hasta dibujar un ángulo recto. Gire la cintura dirigiendo las rodillas hacia un lado –sin tocar el suelo–, procurando llevar las piernas unidas y manteniendo siempre los hombros apoyados.</p>
-                            <video src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435315927.mp4" controls><code>video</code>.
-                            </video>
-                        </li>
-                        <li className="d-flex flex-column justify-content-center align-items-center">
-                            <h2>Extensión de cadera y hombro a gatas</h2>
-                            <p>Colóquese a gatas, apoyando las manos y rodillas en el suelo a la altura de los hombros y las caderas respectivamente. Estire una de las piernas y llévela tan atrás como pueda, a la vez que extiende el brazo contrario –también estirado–, por encima de la cabeza. Repita cambiando de pierna y brazo sucesivamente hasta completar la serie.</p>
-                            <video src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435316535.mp4" controls><code>video</code>.
-                            </video>
-                        </li>
-                    </ol>
-                
-              })
+                ejercicios: (
+                  <div class="card-deck w-75  mt-5">
+                    <div class="card">
+                      <img
+                        src="https://ep01.epimg.net/elpais/imagenes/2015/06/26/buenavida/1435315710_063870_1435316360_sumario_normal.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Ejercicio cardiovascularar
+                        </h5>
+                        <p class="card-text">
+                          Antes de comenzar y entre ejercicio y ejercicio súbase
+                          durante 30 segundos a la cinta de correr, a una
+                          bicicleta estática o a una elíptica. Si no tiene
+                          ninguno de estos aparatos, simule que camina en el
+                          sitio elevando las rodillas un poco más de lo
+                          habitual.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          Last updated 3 mins ago
+                        </small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <video
+                        class="card-img-top"
+                        src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435315927.mp4"
+                        controls
+                      >
+                        <code>video</code>
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title">Rotación de tronco a un lado</h5>
+                        <p class="card-text">
+                          Túmbese en el suelo (si está incómodo hágalo sobre una
+                          esterilla o toalla mullida) con los brazos abiertos en
+                          cruz sobre el suelo. Levante las rodillas hasta
+                          dibujar un ángulo recto. Gire la cintura dirigiendo
+                          las rodillas hacia un lado –sin tocar el suelo–,
+                          procurando llevar las piernas unidas y manteniendo
+                          siempre los hombros apoyados.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          Last updated 3 mins ago
+                        </small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <video
+                        class="card-img-top"
+                        src="https://ep02.epimg.net/elpais/videos/2015/06/26/buenavida/1435315710_063870_1435316535.mp4"
+                        controls
+                      >
+                        <code>video</code>
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Extensión de cadera y hombro a gatas
+                        </h5>
+                        <p class="card-text">
+                          Colóquese a gatas, apoyando las manos y rodillas en el
+                          suelo a la altura de los hombros y las caderas
+                          respectivamente. Estire una de las piernas y llévela
+                          tan atrás como pueda, a la vez que extiende el brazo
+                          contrario –también estirado–, por encima de la cabeza.
+                          Repita cambiando de pierna y brazo sucesivamente hasta
+                          completar la serie.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          Last updated 3 mins ago
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                ),
+              });
               setMiercoles({
     
                 ejercicios : <div>
@@ -203,3 +326,7 @@ export default function Actividades(props) {
     );
 
     }
+
+
+
+
