@@ -18,7 +18,7 @@ function ContainerFooter() {
           <div className="d-flex flex-column align-items-center w-100 p-3">
             <h5>Michael Gómez</h5>
             <img src={Michael} alt="imagen-michael" className="img-fluid w-50 p-2 h-50 rounded-circle"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto itaque numquam unde natus voluptate commodi, repudiandae a, optio eos nemo adipisci totam consectetur! Corporis?</p>
+            <p>Estudiante de Desarrollo Web con énfasis en React, con gran capacidad para aprender rápidamente. Con gran pasión por los deportes</p>
             <div className="d-flex flex-row">
             <a className=" mb-1 p-3" href="/" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faGithub} style={{color:"#fff", fontSize:"30"}} /></a>
@@ -30,7 +30,7 @@ function ContainerFooter() {
           <div className="d-flex flex-column align-items-center w-100 p-3">
           <h5>Iván Darío Mejía</h5>
             <img src={Ivan} alt="imagen-ivan" className="img-fluid w-50 p-2 h-50 rounded-circle" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto itaque numquam unde natus voluptate commodi, repudiandae a, optio eos nemo adipisci totam consectetur! Corporis?</p>
+            <p>Estudiante de Desarrollo Web con énfasis en React, capacitado para trabajar en equipo o individualmente. Apasionado por los viajes,  los deportes y compartir en familia.</p>
             <div className="d-flex flex-row">
             <a className=" mb-3 p-3" href="https://github.com/Ivancho427" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faGithub} style={{color:"#fff", fontSize:"30"}} /></a>

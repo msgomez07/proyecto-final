@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import ContainerInit from "./ContainerInit";
 import ContainerDetails from "./ContainerDetails";
+import FooterContainer from "./FooterContainer";
 
 
 export default function InitialContainer() {
@@ -13,6 +14,8 @@ export default function InitialContainer() {
       </div>
 
       <ContainerDetails />
+    
+    <FooterContainer/>
     </div>
   );
 }
